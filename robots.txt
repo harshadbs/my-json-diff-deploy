@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jsondiffy.com/sitemap.xml
+Sitemap: https://jsondiff.in/sitemap.xml
 
