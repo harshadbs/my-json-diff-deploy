@@ -59,10 +59,30 @@
     <loc>https://jsondiff.in/jwt-decoder</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <lastmod>2026-06-12</lastmod>
   </url>
   <url>
     <loc>https://jsondiff.in/base64</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://jsondiff.in/sql-formatter</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://jsondiff.in/markdown-to-json</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://jsondiff.in/api-testing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-06-12</lastmod>
   </url>
 </urlset>
