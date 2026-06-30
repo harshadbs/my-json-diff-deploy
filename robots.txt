@@ -1,5 +1,10 @@
+# robots.txt for jsondiff.in
 User-agent: *
 Allow: /
+Disallow: /assets/
 
+# Sitemap
 Sitemap: https://jsondiff.in/sitemap.xml
 
+# Crawl-delay (optional, respected by some bots)
+Crawl-delay: 1
