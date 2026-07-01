@@ -1,4 +1,4 @@
-import{r as n,j as e}from"./vendor-react-De-uxN4U.js";import{F as b}from"./monaco-Bj78RGNd.js";import{z as c,t as j,U as f,b as k,D as N,T as w}from"./vendor-6S7C9lYH.js";import{u as C}from"./index-DnYtX_7s.js";import{S as O}from"./SEOHead-D6gl4IX8.js";import"./vendor-router-gbUr-8bA.js";const S=(g,l="root")=>{const s=(r,a)=>{if(r==null)return`<${a} />`;if(typeof r=="object"){if(Array.isArray(r))return r.map(o=>s(o,"item")).join(`
+import{r as n,j as e}from"./vendor-react-BOpOvA1t.js";import{F as b}from"./monaco-DrFkKw4x.js";import{z as c,t as j,U as f,b as k,D as N,T as w}from"./vendor-DhPp45qj.js";import{u as C}from"./index-ChOsRkPf.js";import{S as O}from"./SEOHead-BBFkqYpU.js";import"./vendor-router-BbIPs3SZ.js";const S=(g,l="root")=>{const s=(r,a)=>{if(r==null)return`<${a} />`;if(typeof r=="object"){if(Array.isArray(r))return r.map(o=>s(o,"item")).join(`
 `);const m=Object.entries(r).map(([o,p])=>s(p,o)).join(`
 `);return`<${a}>
 ${m.split(`
