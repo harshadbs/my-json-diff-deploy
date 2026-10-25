@@ -1,1 +1,0 @@
-import{r as t}from"./vendor-react-BjLpch2f.js";function e(e,r=300){const[o,s]=t.useState(e);return t.useEffect((()=>{const t=setTimeout((()=>s(e)),r);return()=>clearTimeout(t)}),[e,r]),o}export{e as u};

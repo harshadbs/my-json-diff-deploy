@@ -1,1 +1,0 @@
-import{a4 as r}from"./vendor-Bel7O43z.js";import{m as e}from"./index-ClCY7RYz.js";async function o(o,t=26214400){if(o.size>t)return r.error(`File is too large (max ${Math.round(t/1024/1024)} MB)`),null;try{return await e(o)}catch{return r.error("Could not read the file"),null}}export{o as l};

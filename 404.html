@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>JSON Diff — Compare JSON Online, Free & Private | JSONDiff.in</title>
+    <meta
+      data-rh="true"
+      name="description"
+      content="Compare two JSON files online and instantly see added, removed and changed values highlighted side by side. Semantic diff, JSON formatter, validator, converters and 20+ free developer tools. 100% in your browser."
+    />
+    <link data-rh="true" rel="canonical" href="https://jsondiff.in/" />
+    <meta data-rh="true" name="robots" content="index, follow" />
+
+    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:site_name" content="JSONDiff.in" />
+    <meta data-rh="true" property="og:title" content="JSON Diff — Compare JSON Online, Free & Private" />
+    <meta data-rh="true" property="og:description" content="Compare two JSON documents and see every change highlighted. Semantic diff, JSON Patch export, shareable links and 20+ free developer tools." />
+    <meta data-rh="true" property="og:url" content="https://jsondiff.in/" />
+    <meta data-rh="true" property="og:image" content="https://jsondiff.in/og-image.png" />
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:title" content="JSON Diff — Compare JSON Online, Free & Private" />
+    <meta data-rh="true" name="twitter:description" content="Compare two JSON documents and see every change highlighted. Free, instant, nothing leaves your browser." />
+    <meta data-rh="true" name="twitter:image" content="https://jsondiff.in/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "JSONDiff.in",
+        "url": "https://jsondiff.in/",
+        "description": "Free online developer tools: JSON diff, formatter, validator, converters, JWT decoder, Base64, regex tester and more. Everything runs in your browser."
+      }
+    </script>
+
+    <style id="initial-style">
+      /* First paint before the stylesheet loads: avoid a white flash in dark mode. */
+      html.dark { background: #020617; }
+      html { background: #f8fafc; }
+    </style>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var dark = saved === 'dark' || ((saved === 'system' || !saved) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-DErR4X58.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-Bq1JEws_.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-CMCYHuUM.js">
+    <link rel="modulepreload" crossorigin href="/assets/monaco-BzBX_Tv_.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-router-D3ILidYF.js">
+    <link rel="stylesheet" crossorigin href="/assets/monaco-CwfKfg-E.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BWLC8Aqz.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="max-width: 600px; margin: 80px auto; padding: 24px; font-family: system-ui, sans-serif; text-align: center">
+        <h1 style="font-size: 24px; margin-bottom: 16px">JSONDiff.in — Developer Tools</h1>
+        <p style="color: #64748b; margin-bottom: 16px">
+          JSONDiff.in runs entirely in your browser, so it needs JavaScript. Your data never leaves your device.
+        </p>
+        <p style="color: #64748b">Please enable JavaScript to use the tools.</p>
+      </div>
+    </noscript>
+  </body>
+</html>
