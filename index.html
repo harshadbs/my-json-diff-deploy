@@ -2,91 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" type="image/png" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
 
-    <!-- Primary Meta -->
-    <title>
-      JSON Compare, Diff, Beautifier & Formatter Online | JSONDiff.in
-    </title>
+    <title>JSON Diff — Compare JSON Online, Free & Private | JSONDiff.in</title>
     <meta
       name="description"
-      content="Compare, diff, beautify, and format JSON online with JSONDiff.in. Easily find differences, clean up messy JSON, and make your data readable. Fast, free, and secure."
+      content="Compare two JSON files online and instantly see added, removed and changed values highlighted side by side. Semantic diff, JSON formatter, validator, converters and 20+ free developer tools. 100% in your browser."
     />
     <link rel="canonical" href="https://jsondiff.in/" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="JSONDiff.in" />
-    <meta
-      property="og:title"
-      content="JSON Compare, Diff, Beautifier & Formatter Online"
-    />
-    <meta
-      property="og:description"
-      content="Compare, diff, beautify, and format JSON online. Find differences, clean up messy JSON, and make your data readable. Fast, free, and secure."
-    />
+    <meta property="og:title" content="JSON Diff — Compare JSON Online, Free & Private" />
+    <meta property="og:description" content="Compare two JSON documents and see every change highlighted. Semantic diff, JSON Patch export, shareable links and 20+ free developer tools." />
     <meta property="og:url" content="https://jsondiff.in/" />
     <meta property="og:image" content="https://jsondiff.in/og-image.png" />
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="JSON Compare, Diff, Beautifier & Formatter Online"
-    />
-    <meta
-      name="twitter:description"
-      content="Compare, diff, beautify, and format JSON online. Find differences instantly. Free developer tool."
-    />
+    <meta name="twitter:title" content="JSON Diff — Compare JSON Online, Free & Private" />
+    <meta name="twitter:description" content="Compare two JSON documents and see every change highlighted. Free, instant, nothing leaves your browser." />
     <meta name="twitter:image" content="https://jsondiff.in/og-image.png" />
 
-    <!-- Additional Meta -->
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#1e40af" />
-    <link rel="apple-touch-icon" href="/logo.png" />
-
-    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebApplication",
+        "@type": "WebSite",
         "name": "JSONDiff.in",
-        "operatingSystem": "Any",
-        "applicationCategory": "DeveloperApplication",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        "description": "Free online developer tools for JSON comparison, formatting, validation, conversion, and API testing. All processing happens in your browser - your data never leaves your device.",
-        "featureList": [
-          "JSON Comparison & Diff",
-          "JSON Formatter & Beautifier",
-          "JSON Validator",
-          "JSON Minifier",
-          "JSON to XML/CSV Converter",
-          "Text Diff Tool",
-          "XML/YAML/SQL Formatter",
-          "JWT Decoder",
-          "Base64 Encoder/Decoder",
-          "API Testing Client",
-          "100% Client-Side Processing"
-        ],
         "url": "https://jsondiff.in/",
-        "browserRequirements": "Requires JavaScript. Works in all modern browsers.",
-        "softwareHelp": "https://jsondiff.in/"
+        "description": "Free online developer tools: JSON diff, formatter, validator, converters, JWT decoder, Base64, regex tester and more. Everything runs in your browser."
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-ChOsRkPf.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-BOpOvA1t.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-DhPp45qj.js">
-    <link rel="modulepreload" crossorigin href="/assets/monaco-DrFkKw4x.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-router-BbIPs3SZ.js">
-    <link rel="stylesheet" crossorigin href="/assets/monaco-B5EY1bb8.css">
-    <link rel="stylesheet" crossorigin href="/assets/index-BDp1u8il.css">
+
+    <style>
+      /* First paint before the stylesheet loads: avoid a white flash in dark mode. */
+      html.dark { background: #020617; }
+      html { background: #f8fafc; }
+    </style>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var dark = saved === 'dark' || ((saved === 'system' || !saved) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-ClCY7RYz.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-BjLpch2f.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-Bel7O43z.js">
+    <link rel="modulepreload" crossorigin href="/assets/monaco-CTK6Llt8.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-router-BJQNMCDZ.js">
+    <link rel="stylesheet" crossorigin href="/assets/monaco-CwfKfg-E.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-Dk15dS0P.css">
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="max-width: 600px; margin: 80px auto; padding: 24px; font-family: system-ui, sans-serif; text-align: center">
+        <h1 style="font-size: 24px; margin-bottom: 16px">JSONDiff.in — Developer Tools</h1>
+        <p style="color: #64748b; margin-bottom: 16px">
+          JSONDiff.in runs entirely in your browser, so it needs JavaScript. Your data never leaves your device.
+        </p>
+        <p style="color: #64748b">Please enable JavaScript to use the tools.</p>
+      </div>
+    </noscript>
   </body>
 </html>

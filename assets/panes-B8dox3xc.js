@@ -1,0 +1,1 @@
+const g="grid gap-3 lg:grid-cols-2 lg:h-[calc(100dvh-20rem)] lg:min-h-[440px] lg:max-h-[860px]",l="h-[360px] sm:h-[440px] lg:h-auto lg:min-h-0",a="grid gap-3 lg:grid-cols-[minmax(0,1fr)_380px] lg:h-[calc(100dvh-20rem)] lg:min-h-[440px] lg:max-h-[860px]";export{a as P,l as a,g as b};
